@@ -3,17 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   <title>Document</title>
   <style>
-    .banner-image {
-      width: 128px;
-      height: 128px;
+ 
+ body {
+      background-color: #a9adbc;
+      padding-top: 40px;
+      padding-bottom: 40px; 
+      display: flex;
+      justify-content: center;
     }
+
+.banner-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+.img {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
+.name {
+  color: #1f4151;;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display:flex;
+  justify-content:space-around;
+}
+.social-icons a {
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.link {
+  background-color: #e5d2b7;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50px 20px;
+}
+
+.link a {
+  color: #1f4151;;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
   </style>
 </head>
 <body>
+  <div class="items">
   <div class="banner">
-    <img src="Profile.JPG" alt="profile pic">
+    <img src="Profile.JPG" alt="profile pic" class="banner-image">
   </div>
 
   <div class="name">
@@ -22,46 +85,66 @@
 
   <div class="social-icons">
     <a href="https://github.com/MYohannes3" target="_blank">
-      GitHub
+      <i class="fa-brands fa-github fa-2xl" style="color: #1f4151;"></i>
+    </a>
+    
+
+    <a href="https://www.linkedin.com/in/meseret-y-8b1442251/" target="_blank">
+      <i class="fa-brands fa-linkedin fa-2xl" style="color: #1f4151;"></i>
     </a>
 
-    <a href="https://www.linkedin.com/in/raghubetina/" target="_blank">
-      LinkedIn
+    <a href="https://www.instagram.com/mace_721/" target="_blank">
+      <i class="fa-brands fa-instagram fa-2xl" style="color: #1f4151;"></i>
     </a>
 
-    <a href="https://www.instagram.com/raghubetina/" target="_blank">
-      Instagram
-    </a>
-
-    <a href="https://twitter.com/raghubetina" target="_blank">
-      Twitter
+    <a href="https://twitter.com/messiyoo" target="_blank">
+      <i class="fa-brands fa-twitter fa-2xl" style="color: #1f4151;"></i>
     </a>
   </div>
 
   <div class="link">
-    <img
-      src="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png">
+    <img class="img"
+      src="img/Fasil.jpeg">
 
-    <a target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas
-      — Paul Graham</a>
+    <a target="_blank" href="https://www.shadowsofafrica.com/sof-omar-caves">Gondar Fasil Castle– Camelot of Africa
+      </a>
   </div>
 
   <div class="link">
-    <img src="/thumbnails/typography.jpg">
+    <img class="img"
+      src="img/Axum3 (2).jpg">
+
+    <a target="_blank" href="https://education.nationalgeographic.org/resource/kingdom-aksum/">Aksum – Land of Queen Sheba</a>
+  </div>
+
+  <div class="link">
+    <img class="img" src="img/BlueNileFalls-1.webp">
 
     <a target="_blank"
-      href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes — Matthew
-      Butterick</a>
+      href="https://www.brilliant-ethiopia.com/regions/blue-nile-falls">Tis Abay - The Blue Nile Falls</a>
   </div>
 
   <div class="link">
-    <img
-      src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg">
+    <img class="img"
+      src="img/Lalibela.jpg">
 
-    <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
-      Life-Saving Checklist — The New Yorker</a>
+    <a target="_blank" href="https://museumofwander.com/lalibela-churches-in-ethiopia/">Lalibela - The rock hewen churches.</a>
   </div>
 
-  <!-- Etc, for as many links as you want -->
+  <div class="link">
+    <img class="img"
+      src="img/ertale-1-1024x640 - Copy.jpg">
+    <a target="_blank" href="https://www.volcanodiscovery.com/erta_ale.html">
+      Ertale Volcano - Smoking Mountains of Ethiopia</a>
+  </div>
+
+  <div class="link">
+    <img class="img"
+      src="img/Sof omer cave.jpg">
+
+    <a target="_blank" href="https://www.shadowsofafrica.com/sof-omar-caves">
+      Sof Omer - Longest Cave in Ethiopia</a>
+  </div>
+  </div>
 </body>
 </html>
